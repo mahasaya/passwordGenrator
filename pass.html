@@ -7,14 +7,14 @@
 </head>
 <body>
   
-    <div>
+    <div class="container">
         <h1>Password Genrator</h1>
 
-        <div class="dispaly-container">
+        <div class="display-container">
 
-            <input readonly placeholder="Password" class="dispaly" data-passwordDisplay>
+            <input readonly placeholder="Password" class="display" data-passwordDisplay>
             
-            <button>
+            <button data-copy>
                 <span data-copyMsg></span>
                 <img src="img/copy.svg" alt="copy" width="23" height="23">
             </button>
@@ -23,7 +23,7 @@
 
         <div class="input-container">
            
-           <div class="Length-container">
+           <div class="length-container">
                 <p>Password Length</p>
                 <p data-lengthNumber>0</p>
            </div>
@@ -59,7 +59,7 @@
             </div>
 
             <!--generate password-->
-            <button class="generatePassword">Genrate Password</button>
+            <button class="generateButton">Genrate Password</button>
         </div>
     </div>
     
