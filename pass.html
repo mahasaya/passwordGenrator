@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Password Genrator</title>
+    <link rel="stylesheet" href="pass.css">
 </head>
 <body>
   
@@ -15,7 +16,7 @@
             <input readonly placeholder="Password" class="display" data-passwordDisplay>
             
             <button data-copy>
-                <span data-copyMsg></span>
+                <span class="toolkit" data-copyMsg></span>
                 <img src="img/copy.svg" alt="copy" width="23" height="23">
             </button>
         
@@ -32,22 +33,22 @@
             <input type="range" min="1" max="20" class="slider" step="1" data-lengthSlider>
     
             <!--checkboxes-->
-            <div>
+            <div class="check">
                 <input type="checkbox" id="uppercase">
                 <label for="uppercase">Includes Uppercase letters</label>
             </div>
 
-            <div>
+            <div class="check">
                 <input type="checkbox" id="lowercase">
                 <label for="lowercase">Includes lowercase letters</label>
             </div>
 
-            <div>
+            <div class="check">
                 <input type="checkbox" id="Numbers">
                 <label for="Numbers">Includes Numbers</label>
             </div>
 
-            <div>
+            <div class="check">
                 <input type="checkbox" id="symbols">
                 <label for="symbols">Includes Symbols</label>
             </div>
@@ -55,7 +56,7 @@
             <!--strength section-->
             <div class="strength-container">
                 <p>Strength</p>
-                <div data-indicator></div>
+                <div class="indicator" data-indicator></div>
             </div>
 
             <!--generate password-->
